@@ -1,4 +1,4 @@
-ARG TAG=${TAG:-latest}
+ARG TAG="latest"
 FROM lambdalisue/vim-ci:${TAG}
 MAINTAINER lambdalisue <lambdalisue@hashnote.net>
 
