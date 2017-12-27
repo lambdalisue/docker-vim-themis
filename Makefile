@@ -16,7 +16,7 @@ help: ## Show this help
 
 image: ## Build a docker image
 	@echo "${GREEN}Building a docker image (${IMAGE}:${TAG})${RESET}"
-	@docker build --build-arg TAG=${TAG} -t ${IMAGE}:${TAG} .
+	@docker build --no-cache --build-arg TAG=${TAG} -t ${IMAGE}:${TAG} .
 
 .PHONY: pull
 pull: ## Pull a docker image
